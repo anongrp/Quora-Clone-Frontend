@@ -23,6 +23,7 @@ function openModel(e) {
 function closeModel(e) {
     model.hide();
     backdrop.fadeOut(500);
+    body.css('overflow','scroll');
 }
 
 
@@ -67,6 +68,7 @@ function removeActiveTab(tab){
 }
 
 
+// Temp Function For Dummy Data
 function loadHomePageData(){
     for(var i=0;i<10;i++){
         $('#listView').append(homePageData);

@@ -1,0 +1,124 @@
+@media(max-width:480px) {
+    .header {
+        display: flex;
+        height: 105px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        &__logo {
+            margin-top: 10px;
+        }
+        &__nav {
+            width: 100%;
+            margin-top: 10px;
+            &__list {
+                display: flex;
+                list-style: none;
+                & li {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                & li a,
+                & li a:visited {
+                    margin: 0 auto;
+                    height: 53px;
+                    width: 100%;
+                }
+            }
+        }
+        &__search_box {
+            position: absolute;
+            right: 0px;
+            margin-right: 10px;
+            margin-top: 7px;
+        }
+        &__que_btn {
+            display: none;
+        }
+        &__profileView {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            top: 17px;
+            left: 35%;
+            & img {
+                border-radius: 50%;
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+    .section {
+        margin-top: 100px;
+        &__main {
+            padding: 10px 5px;
+            &__listView {
+                padding-left: 1%;
+                padding-right: 1%;
+                padding-bottom: 5%;
+                & li {
+                    .addQueProfileView {
+                        & h3 {
+                            font-size: 1.5rem;
+                        }
+                        & .quePostedUsrName {
+                            font-size: 1.7rem;
+                        }
+                    }
+                    & h1 {
+                        font-size: 1.8rem;
+                    }
+                    & p {
+                        font-size: 1.2rem;
+                    }
+                    & .queTitle {
+                        font-size: 2rem;
+                    }
+                    & .bottomControll {
+                        & i {
+                            font-size: 1.6rem;
+                        }
+                        & span {
+                            font-size: 1.2rem;
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section__main__listView2 {
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 5%;
+    }
+
+    .section__main__listView2 li .addQueProfileView h3 {
+        font-size: 1.2rem;
+    }
+
+    .section__main__listView2 li .addQueProfileView .quePostedUsrName {
+        font-size: 1.5rem;
+    }
+
+    .section__main__listView2 li h1 {
+        font-size: 2rem;
+    }
+    .section__main__listView2 li p {
+        font-size: 1.2rem;
+    }
+    .section__main__listView2 li .queTitle2 {
+        font-size: 1.7rem;
+    }
+    .section__main__listView2 li .bottomControll i {
+        font-size: 1.5rem;
+    }
+    .section__main__listView2 li .bottomControll span {
+        font-size: 1.2rem;
+    }
+}
