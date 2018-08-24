@@ -1,0 +1,125 @@
+$color-primary: #0097D6;
+$color-accent: #00BBE3;
+$color-light: #FAFBFE;
+$color-dark: #666666;
+$color-white: #ffffff;
+$color-ripple: $color-accent;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62.5%;
+    user-select: none;
+    background: url(../img/login_bg.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container {
+    height: 100%;
+    position: relative;
+    
+    &__main {
+        background-color: $color-white;
+        width: 55%;
+        height: 70%;
+        position: relative;
+        top: 50px;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        margin: 0 auto;
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px 2px rgba($color: #000000, $alpha: 0.2);
+
+        &__header {
+            width: 100%;
+            height: 20%;
+            margin: 30px auto;
+            text-align: center;
+
+            &__logo {
+                width: 200px;
+                display: inline-block;
+                margin-top: 30px;
+            }
+            & h2 {
+                color: rgba($color: $color-dark, $alpha: .7);
+                font-family: 'Ubuntu';
+                font-weight: 400;
+                margin-top: 10px;
+                font-size: 1.5rem;
+            }
+        }
+
+        &__form {
+            width: 100%;
+            display: flex;
+            position: relative;
+            top: 50px;
+            padding: 0 70px;
+
+            & .signup_container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            & .signin_container {
+                flex: 1;
+                border-left: 1px solid rgba($color: $color-dark, $alpha: .7);
+
+                & input {
+                    float: right;
+                }
+            }
+
+            & input {
+                background-color: rgba($color: $color-dark, $alpha: .1);
+                color: $color-dark;
+                font-weight: bold;
+                width: 250px;
+                height: 32px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                padding-left: 10px;
+                margin: 10px;
+
+                &::placeholder {
+                    color: rgba($color: $color-dark, $alpha: .5);
+                }
+            }
+
+            & input[type=submit] {
+                width: 100px;
+                background-color: $color-primary;
+                color: $color-white;
+                padding: 0;
+                display: block;
+                margin-left: 130px;
+                cursor: pointer;
+
+                &:active {
+                    transform: skew(-15deg);
+                }
+            }
+            
+            & input:disabled {
+                background-color: $color-accent;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+@media(max-width:1250px) {
+    .container__main {
+        width: 700px;
+    }
+}

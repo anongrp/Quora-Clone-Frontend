@@ -1,0 +1,12 @@
+{
+  "name": "Quora-Clone",
+  "version": "1.0.0",
+  "description": "Just For Fun",
+  "main": "index.js",
+  "scripts": {
+    "start": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
