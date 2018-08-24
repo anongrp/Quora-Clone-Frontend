@@ -31,8 +31,10 @@
         &__search_box {
             position: absolute;
             right: 0px;
-            margin-right: 10px;
+            margin-right: 20px;
             margin-top: 7px;
+            flex: 0;
+            width: 50%;
         }
         &__que_btn {
             display: none;

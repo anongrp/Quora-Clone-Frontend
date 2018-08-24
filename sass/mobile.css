@@ -41,8 +41,12 @@
   .header__search_box {
     position: absolute;
     right: 0px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 7px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    width: 50%;
   }
   .header__que_btn {
     display: none;
