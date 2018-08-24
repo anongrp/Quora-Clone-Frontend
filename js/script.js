@@ -8,11 +8,13 @@ var questionPageData=`<li> <div class="addQueProfileView"> <div style="float: le
 
 var model = $('.model_container');
 var backdrop = $('.backdrop');
+var body = $('body');
 
 
 function openModel(e) {
-    model.fadeIn(500);
-    backdrop.fadeIn(800);
+    model.fadeIn(200);
+    backdrop.show();
+    body.css('overflow','hidden');
 }
 
 function closeModel(e) {
