@@ -333,6 +333,10 @@ body {
             border-radius: 5px;
             position: absolute;
             right: 20px;
+
+            &:active {
+                transform: skew(-15deg);
+            }
         }
     }
 }
@@ -365,6 +369,116 @@ body {
         transition: 0s;
     }
 }
+
+// Gaurav Css
+
+.section__main__listView2 {
+    overflow: auto;
+    widows: 100%;
+    min-height: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    list-style: none;
+  }
+  
+  .section__main__listView2 li {
+    border:1px solid #E1E4E9;
+    background-color: #ffffff;
+    widows: 100%;
+    padding: 2% 4%;
+  }
+  
+  .section__main__listView2 li .addQueProfileView {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .section__main__listView2 li .addQueProfileView img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .section__main__listView2 li .addQueProfileView h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 15px;
+    color: rgba(102, 102, 102, 0.5);
+  }
+  
+  .section__main__listView2 li .addQueProfileView p {
+    margin-left: 15px;
+    color: rgba(102, 102, 102, 0.5);
+  }
+  
+  .section__main__listView2 li .addQueProfileView .quePostedUsrName {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #666666;
+  }
+  
+  .section__main__listView2 li h1 {
+    color: rgba(102, 102, 102, 0.5);
+    font-family: 'MyFont-b';
+    padding: 10px 0px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-size: 2.7rem;
+  }
+  
+  .section__main__listView2 li p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #666666;
+  }
+  
+  .section__main__listView2 li .queTitle2 {
+    font-family: 'MyFont-b';
+    padding: 10px 0px;
+    letter-spacing: 1.5px;
+    color: #666666;
+    cursor: pointer;
+    font-size: 2.3rem;
+  }
+  
+  .section__main__listView2 li .bottomControll {
+    margin-top: 20px;
+    position: relative;
+    z-index: 50;
+  }
+  
+  .section__main__listView2 li .bottomControll i {
+    font-size: 2rem;
+    color: #666666;
+  }
+  
+  .section__main__listView2 li .bottomControll i:nth-child(2) {
+    position: absolute;
+    right: 0px;
+  }
+  
+  .section__main__listView2 li .bottomControll span {
+    font-size: 1.7rem;
+    margin: 0 10px;
+  }
+  
+  a{
+      text-decoration: none;
+      color: #777D87;
+  }
+  a:hover{
+      text-decoration: underline;
+  }
+  .ans-btn:hover{
+      cursor: pointer;
+      font-weight: bold;
+  }
 
 
 // Scrollbar
