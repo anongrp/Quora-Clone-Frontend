@@ -1,0 +1,24 @@
+<ul class="section__main__listView" id="listView">
+
+  <li>
+    <div class="addQueProfileView"><img src="assets/img/test.png" alt="Profile Pic">
+      <h3>UserName</h3></div>
+    <h1 class="queTitle">{{ data.title }}</h1>
+  </li>
+
+  <li *ngFor="let i of data.answers">
+    <div class="addQueProfileView"><img src="assets/img/test.png" alt="Profile Pic">
+      <div><h3 class="quePostedUsrName">{{ i.writerName }}</h3>
+        <p>{{ i.time }}</p></div>
+    </div>
+    <p>{{ i.ans }}</p>
+    <div class="bottomControll"><i class="fa fa-heart"></i><i class="fa fa-share"></i><span>{{ i.likes }}</span></div>
+  </li>
+
+  <li>
+    <textarea class="answerInput">
+
+    </textarea>
+    <a class="submitAnsBtn"> Submit Answer </a>
+  </li>
+</ul>

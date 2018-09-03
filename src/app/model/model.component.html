@@ -1,0 +1,32 @@
+<div class="backdrop" #backdrop (click)="hide()"> </div>
+<div class="model_container" #model_container>
+  <div class="model">
+    <div class="model__exit">
+      <span (click)="hide()" >X</span>
+    </div>
+    <div class="model__inputbox">
+      <form method="GET">
+        <input type="text" placeholder="Start your question with &quot;What&quot;, &quot;How&quot;, &quot;Why&quot;, etc.">
+      </form>
+    </div>
+    <div class="model__bottom">
+      <a class="model__bottom__cancel" (click)="hide()">Cancel</a>
+      <a class="model__bottom__add">Add Question</a>
+    </div>
+  </div>
+</div>
+
+
+<!--var model = $('.model_container');-->
+<!--var backdrop = $('.backdrop');-->
+<!--var body = $('body');-->
+<!--function openModel(e) {-->
+<!--model.fadeIn(200);-->
+<!--backdrop.show();-->
+<!--body.css('overflow','hidden');-->
+<!--}-->
+<!--function closeModel(e) {-->
+<!--model.hide();-->
+<!--backdrop.fadeOut(500);-->
+<!--body.css('overflow','scroll');-->
+<!--}-->

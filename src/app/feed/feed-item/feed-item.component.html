@@ -1,0 +1,9 @@
+<li>
+  <div class="addQueProfileView"><img src="assets/img/test.png" alt="Profile Pic">
+    <div><h3 class="quePostedUsrName">{{ data.usrName }}</h3>
+      <p>{{ data.time }}</p></div>
+  </div>
+  <h1 class="queTitle" (click)="openAnswerView()">{{ data.title }}</h1>
+  <p>{{ data.desc }}</p>
+  <div class="bottomControll"><i class="fa fa-heart"></i><i class="fa fa-share"></i><span>{{ data.likes }}</span></div>
+</li>

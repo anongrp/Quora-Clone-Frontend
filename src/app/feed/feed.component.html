@@ -1,0 +1,11 @@
+<ul class="section__main__listView" id="listView">
+
+  <li (click)="openModel()">
+    <div class="addQueProfileView"><img src="assets/img/test.png" alt="Profile Pic">
+      <h3>UserName</h3></div>
+    <h1>What is your question?</h1>
+  </li>
+
+  <app-feed-item *ngFor="let temp of [1,2,3,4,5,6,7,8,9,0,1,3,4,5]"
+                 [data]="data"> </app-feed-item>
+</ul>
